@@ -108,9 +108,9 @@ export default function Landing() {
   const navLinks = [
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Properties", href: "#properties" },
+    
     { label: "Why Us", href: "#why-us" },
-    { label: "Team", href: "#team" },
+    
     { label: "Contact", href: "#contact" },
   ];
 
@@ -340,29 +340,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* STATS BAR (mobile + reinforced desktop) */}
-      <section className="border-y border-slate-100 bg-slate-50/60">
-        <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-3 gap-8">
-          <Reveal>
-            <div className="text-center">
-              <p className="font-display text-3xl sm:text-4xl font-bold text-accent">10,000+</p>
-              <p className="text-sm text-slate-500 mt-1">Leads Managed</p>
-            </div>
-          </Reveal>
-          <Reveal delay={100}>
-            <div className="text-center">
-              <p className="font-display text-3xl sm:text-4xl font-bold text-accent">500+</p>
-              <p className="text-sm text-slate-500 mt-1">Properties Sold</p>
-            </div>
-          </Reveal>
-          <Reveal delay={200}>
-            <div className="text-center">
-              <p className="font-display text-3xl sm:text-4xl font-bold text-accent">95%</p>
-              <p className="text-sm text-slate-500 mt-1">Follow-Up Success</p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      
 
       {/* ABOUT */}
       <section id="about" className="py-28 max-w-7xl mx-auto px-6">
@@ -402,27 +380,6 @@ export default function Landing() {
                     <p className="text-xs text-slate-500 mt-0.5">Deep market knowledge</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={150}>
-            <div className="grid grid-cols-2 gap-5">
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 h-56 flex flex-col justify-end shadow-xl shadow-blue-200">
-                <p className="text-white text-3xl font-bold font-display">12+</p>
-                <p className="text-blue-100 text-sm mt-1">Years of Excellence</p>
-              </div>
-              <div className="bg-slate-100 rounded-3xl p-8 h-56 flex flex-col justify-end mt-8">
-                <p className="text-slate-900 text-3xl font-bold font-display">50+</p>
-                <p className="text-slate-500 text-sm mt-1">Expert Advisors</p>
-              </div>
-              <div className="bg-slate-100 rounded-3xl p-8 h-40 flex flex-col justify-end">
-                <p className="text-slate-900 text-2xl font-bold font-display">15+</p>
-                <p className="text-slate-500 text-sm mt-1">Cities Covered</p>
-              </div>
-              <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 h-40 flex flex-col justify-end -mt-8">
-                <p className="text-white text-2xl font-bold font-display">4.9★</p>
-                <p className="text-slate-300 text-sm mt-1">Client Rating</p>
               </div>
             </div>
           </Reveal>
