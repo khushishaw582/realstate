@@ -316,12 +316,7 @@ export default function Landing() {
 
             <Reveal delay={400}>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="#properties"
-                  className="bg-accent hover:bg-accent-hover text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg shadow-blue-200 hover:shadow-xl hover:-translate-y-0.5"
-                >
-                  Explore Properties
-                </a>
+            
                 <a
                   href="#contact"
                   className="border border-slate-200 hover:border-slate-300 text-slate-700 px-8 py-4 rounded-full font-medium transition-all hover:-translate-y-0.5"
@@ -334,16 +329,7 @@ export default function Landing() {
 
           {/* Floating stat cards */}
           <div className="relative hidden lg:block">
-            <Reveal delay={200}>
-              <div className="bg-white/90 backdrop-blur-xl border border-slate-100 shadow-2xl shadow-slate-200/60 rounded-3xl p-8 rotate-2 hover:rotate-0 transition-transform duration-500">
-                <div className="grid grid-cols-2 gap-6">
-                  <StatBlock value="10,000+" label="Leads Managed" />
-                  <StatBlock value="500+" label="Properties Sold" />
-                  <StatBlock value="95%" label="Follow-Up Success" />
-                  <StatBlock value="24/7" label="Support Available" />
-                </div>
-              </div>
-            </Reveal>
+          
 
             <Reveal delay={500} className="absolute -bottom-6 -left-10">
               <div className="bg-white shadow-xl shadow-slate-200/60 border border-slate-100 rounded-2xl px-5 py-4 flex items-center gap-3 -rotate-3 hover:rotate-0 transition-transform duration-500">
