@@ -1,0 +1,16 @@
+# Python / Django
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/.env
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
