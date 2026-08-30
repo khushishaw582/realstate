@@ -276,8 +276,8 @@ export default function Landing() {
             
                 <a
                   href="#contact"
-                  className="border border-slate-200 hover:border-slate-300 text-slate-700 px-8 py-4 rounded-full font-medium transition-all hover:-translate-y-0.5"
-                >
+                  className="text-sm font-medium bg-accent hover:bg-accent-hover text-white px-5 py-2.5 rounded-full transition-colors shadow-sm"
+            >
                   Talk to an Advisor
                 </a>
               </div>
