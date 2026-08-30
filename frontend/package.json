@@ -22,7 +22,7 @@
     "postcss": "^8.4.41",
     "autoprefixer": "^10.4.20"
   },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.24.0"
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
   }
 }
