@@ -215,68 +215,25 @@ export default function Landing() {
         )}
       </nav>
 
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white">
-        {/* Diagonal triangle accent — top right corner */}
-        <div
-          className="absolute top-0 right-0 w-[55%] h-[45%] bg-accent/90"
-          style={{ clipPath: "polygon(100% 0, 100% 100%, 0 0)" }}
-        />
-        <div
-          className="absolute top-0 right-0 w-[38%] h-[30%] bg-white"
-          style={{ clipPath: "polygon(100% 0, 100% 100%, 0 0)" }}
-        />
-        <div
-          className="absolute top-0 right-0 w-[20%] h-[16%] bg-gold"
-          style={{ clipPath: "polygon(100% 0, 100% 100%, 0 0)" }}
-        />
-
-        {/* Big skyline illustration — right side, standing tall */}
+            {/* HERO */}
+      <section className="relative overflow-hidden pt-28 pb-16 lg:min-h-screen lg:flex lg:items-center lg:pt-20 bg-gradient-to-b from-slate-50 via-white to-white">
+        {/* Skyline illustration background */}
         <svg
-          className="absolute bottom-0 right-0 h-[75%] w-auto opacity-[0.9]"
-          viewBox="0 0 900 600"
-          preserveAspectRatio="xMidYMax meet"
+          className="absolute bottom-0 left-0 w-full opacity-[0.06] pointer-events-none"
+          viewBox="0 0 1200 300"
+          preserveAspectRatio="xMidYMax slice"
         >
-          {/* back row - lighter */}
-          <rect x="40" y="220" width="80" height="380" fill="#DBEAFE" />
-          <rect x="150" y="150" width="70" height="450" fill="#DBEAFE" />
-          <rect x="700" y="180" width="90" height="420" fill="#DBEAFE" />
-          <rect x="810" y="260" width="70" height="340" fill="#DBEAFE" />
-
-          {/* front row - main towers, brand navy */}
-          <g fill="#0A1628">
-            <rect x="230" y="260" width="90" height="340" />
-            <rect x="330" y="120" width="100" height="480" />
-            <rect x="440" y="200" width="80" height="400" />
-            <rect x="530" y="60" width="110" height="540" />
-            <rect x="650" y="180" width="85" height="420" />
-          </g>
-
-          {/* windows on the two tallest towers */}
-          <g fill="#D4AF37" opacity="0.55">
-            {Array.from({ length: 12 }).map((_, row) =>
-              Array.from({ length: 4 }).map((_, col) => (
-                <rect
-                  key={`t1-${row}-${col}`}
-                  x={345 + col * 20}
-                  y={140 + row * 32}
-                  width="10"
-                  height="16"
-                />
-              ))
-            )}
-            {Array.from({ length: 14 }).map((_, row) =>
-              Array.from({ length: 5 }).map((_, col) => (
-                <rect
-                  key={`t2-${row}-${col}`}
-                  x={545 + col * 18}
-                  y={80 + row * 32}
-                  width="10"
-                  height="16"
-                />
-              ))
-            )}
-          </g>
+          <rect x="40" y="120" width="70" height="180" fill="#1E3A8A" />
+          <rect x="130" y="60" width="90" height="240" fill="#1E3A8A" />
+          <rect x="240" y="150" width="60" height="150" fill="#1E3A8A" />
+          <rect x="320" y="40" width="80" height="260" fill="#1E3A8A" />
+          <rect x="430" y="100" width="70" height="200" fill="#1E3A8A" />
+          <rect x="520" y="20" width="100" height="280" fill="#1E3A8A" />
+          <rect x="650" y="90" width="75" height="210" fill="#1E3A8A" />
+          <rect x="750" y="130" width="65" height="170" fill="#1E3A8A" />
+          <rect x="840" y="50" width="90" height="250" fill="#1E3A8A" />
+          <rect x="960" y="110" width="70" height="190" fill="#1E3A8A" />
+          <rect x="1060" y="70" width="85" height="230" fill="#1E3A8A" />
         </svg>
 
         {/* Floating gradient blobs (Apple/Airbnb-style soft glow) */}
