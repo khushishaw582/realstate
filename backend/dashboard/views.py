@@ -7,6 +7,7 @@ from users.permissions import IsAdmin
 from users.models import User
 from leads.models import Lead
 from activities.models import LeadActivity
+from django.http import JsonResponse
 
 
 @api_view(['GET'])
@@ -70,4 +71,11 @@ def dashboard_stats(request):
     return Response({
         'leadStats': lead_stats,
         'agentStats': agent_stats,
+    })
+
+def health_check(request):
+    return JsonResponse({
+        "status": "OK",
+        "message": "Your API is running",
+        "timestamp": timezone.now().isoformat(),
     })
